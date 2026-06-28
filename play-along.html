@@ -1,70 +1,329 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title>Play Along — Online Guitar Choro Club</title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.65">
-  <style type="text/css">
-    body {background-color: #141322}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #fcf7e9; -webkit-text-stroke: #fcf7e9; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Helvetica; color: #389c78; -webkit-text-stroke: #389c78}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.5); -webkit-text-stroke: rgba(252, 247, 233, 0.5)}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica; color: #f6bc3f; -webkit-text-stroke: #f6bc3f; background-color: #0e0e17}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Helvetica; color: #f6bc3f; color: rgba(246, 188, 63, 0.7); -webkit-text-stroke: rgba(246, 188, 63, 0.7)}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.6); -webkit-text-stroke: rgba(252, 247, 233, 0.6); background-color: #0e0e17}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.4); -webkit-text-stroke: rgba(252, 247, 233, 0.4)}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.55); -webkit-text-stroke: rgba(252, 247, 233, 0.55)}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.5); -webkit-text-stroke: rgba(252, 247, 233, 0.5)}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #fcf7e9; -webkit-text-stroke: #fcf7e9; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.078)}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Helvetica; color: #ffffff; color: rgba(255, 255, 255, 0.3); -webkit-text-stroke: rgba(255, 255, 255, 0.3); background-color: #ffffff; background-color: rgba(255, 255, 255, 0.1)}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.4); -webkit-text-stroke: rgba(252, 247, 233, 0.4)}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Helvetica; color: #fcf7e9; -webkit-text-stroke: #fcf7e9; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.059)}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Helvetica; color: #141322; -webkit-text-stroke: #141322; background-color: #f6bc3f}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px Helvetica; color: #141322; color: rgba(20, 19, 34, 0.6); -webkit-text-stroke: rgba(20, 19, 34, 0.6)}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 18.0px; font: 12.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.4); -webkit-text-stroke: rgba(252, 247, 233, 0.4)}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 19.2px; font: 12.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.6); -webkit-text-stroke: rgba(252, 247, 233, 0.6)}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 17.6px; font: 11.0px Helvetica; color: #f6bc3f; -webkit-text-stroke: #f6bc3f}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 17.6px; font: 11.0px Helvetica; color: #fcf7e9; color: rgba(252, 247, 233, 0.3); -webkit-text-stroke: rgba(252, 247, 233, 0.3)}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; color: #f6bc3f; -webkit-text-stroke: 0px #f6bc3f}
-    span.s3 {font: 10.0px 'Zapf Dingbats'; font-kerning: none}
-    span.s4 {font-kerning: none; background-color: #0e0e17}
-    span.s5 {font-kerning: none; color: #f6bc3f; background-color: #0e0e17; -webkit-text-stroke: 0px #f6bc3f}
-    span.s6 {font-kerning: none; background-color: rgba(255, 255, 255, 0.059)}
-    span.s7 {font-kerning: none; background-color: #f6bc3f}
-    span.s8 {font-kerning: none; background-color: rgba(65, 189, 236, 0.078)}
-    span.s9 {font: 12.0px Times; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s10 {font-kerning: none; color: rgba(252, 247, 233, 0.3); -webkit-text-stroke: 0px rgba(252, 247, 233, 0.3)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Along — Online Guitar Choro Club</title>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --yellow:#F9C74F;--dark:#1A1A2E;--red:#E63946;--teal:#43AA8B;
+  --blue:#4CC9F0;--purple:#9B5DE5;--orange:#F4A261;--cream:#FDF8ED;--navy:#11111F;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Raleway',sans-serif;background:var(--dark);color:var(--cream);min-height:100vh;padding-bottom:40px;}
+.stripe{height:6px;background:linear-gradient(90deg,var(--red) 0 16.6%,var(--orange) 0 33.2%,var(--yellow) 0 49.8%,var(--teal) 0 66.4%,var(--blue) 0 83%,var(--purple) 0 100%);}
+.wrap{max-width:560px;margin:0 auto;padding:0 20px;}
+
+header{padding:32px 0 8px;text-align:center;}
+.logo{font-size:13px;font-weight:900;color:#fff;}
+.logo span{color:var(--yellow);}
+.eyebrow{font-size:10px;font-weight:800;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal);margin-top:14px;}
+h1{font-size:32px;font-weight:900;letter-spacing:-0.02em;line-height:1.05;margin:6px 0 4px;}
+.tune-composer{font-size:13px;color:rgba(253,248,237,0.5);font-style:italic;}
+
+/* Tabs */
+.tabs{display:flex;gap:8px;margin:26px 0 0;}
+.tab{flex:1;background:var(--navy);border:1px solid rgba(255,255,255,0.08);color:rgba(253,248,237,0.6);border-radius:10px 10px 0 0;padding:16px 12px;font-family:inherit;font-weight:800;font-size:13px;cursor:pointer;text-align:center;transition:all 0.15s;}
+.tab .role{font-size:11px;font-weight:700;color:rgba(253,248,237,0.4);display:block;margin-top:3px;letter-spacing:0.04em;}
+.tab.on{background:var(--navy);color:var(--yellow);border-color:rgba(249,199,79,0.4);border-bottom-color:var(--navy);}
+.tab.on .role{color:rgba(249,199,79,0.7);}
+
+.panel{background:var(--navy);border:1px solid rgba(255,255,255,0.08);border-radius:0 0 12px 12px;padding:26px 22px;}
+
+.you-play{text-align:center;font-size:12px;font-weight:700;letter-spacing:0.04em;color:rgba(253,248,237,0.55);margin-bottom:20px;}
+.you-play strong{color:var(--yellow);font-weight:800;}
+
+/* Transport */
+.time-row{display:flex;justify-content:space-between;font-size:12px;font-weight:700;color:rgba(253,248,237,0.5);margin-bottom:6px;font-variant-numeric:tabular-nums;}
+.scrub{width:100%;-webkit-appearance:none;height:6px;border-radius:3px;background:rgba(255,255,255,0.15);outline:none;cursor:pointer;}
+.scrub::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--yellow);border:3px solid var(--navy);cursor:pointer;}
+.scrub::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--yellow);border:3px solid var(--navy);cursor:pointer;}
+
+.controls{display:flex;align-items:center;gap:12px;margin:22px 0 0;}
+.play-btn{flex:1;background:var(--red);color:#fff;border:none;border-radius:8px;padding:16px 0;font-family:inherit;font-size:14px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;transition:background 0.15s;}
+.play-btn.playing{background:var(--teal);}
+.play-btn:disabled{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.3);cursor:not-allowed;}
+.restart{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);color:var(--cream);border-radius:8px;padding:16px 18px;font-size:16px;cursor:pointer;}
+
+/* Tempo */
+.tempo-label{font-size:10px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase;color:rgba(253,248,237,0.4);margin:24px 0 10px;text-align:center;}
+.tempo-seg{display:flex;gap:8px;}
+.tempo-seg button{flex:1;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);color:var(--cream);border-radius:8px;padding:14px 0;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer;transition:all 0.15s;}
+.tempo-seg button .pct{display:block;font-size:11px;font-weight:600;color:rgba(253,248,237,0.4);margin-top:2px;}
+.tempo-seg button.on{background:var(--yellow);color:var(--dark);border-color:var(--yellow);}
+.tempo-seg button.on .pct{color:rgba(26,26,46,0.6);}
+
+.status{text-align:center;font-size:12px;color:rgba(253,248,237,0.4);margin-top:18px;line-height:1.5;}
+
+/* Setup note */
+.setup{background:rgba(76,201,240,0.08);border:1px solid rgba(76,201,240,0.2);border-radius:10px;padding:16px 18px;margin:20px 0;font-size:12px;color:rgba(253,248,237,0.6);line-height:1.6;}
+.setup code{background:rgba(0,0,0,0.3);padding:1px 6px;border-radius:4px;color:var(--blue);font-size:11px;}
+
+footer{text-align:center;margin-top:28px;font-size:11px;color:rgba(253,248,237,0.3);line-height:1.6;}
+footer a{color:var(--yellow);text-decoration:none;}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><b>Online </b></span><span class="s2"><b>Guitar</b></span><span class="s1"><b> Choro Club</b></span></p>
-<p class="p3"><span class="s3">✦</span><span class="s1"><b> PLAY ALONG</b></span></p>
-<h1 style="margin: 0.0px 0.0px 4.0px 0.0px; text-align: center; line-height: 33.6px; font: 32.0px Helvetica; color: #fcf7e9; -webkit-text-stroke: #fcf7e9"><span class="s1"><b>Descendo a Serra</b></span></h1>
-<p class="p5"><span class="s1"><i>Pixinguinha / Benedito Lacerda · Session 2</i></span></p>
-<p class="p6"><span class="s1"><b>Accompaniment</b></span></p>
-<p class="p7"><span class="s4"><b>you play the melody</b></span></p>
-<p class="p8"><span class="s1"><b>Melody</b></span></p>
-<p class="p9"><span class="s4"><b>you play accompaniment</b></span></p>
-<p class="p10"><span class="s4"><b>Douglas plays the </b></span><span class="s5"><b>accompaniment</b></span><span class="s4"><b> — you play the melody over it.</b></span></p>
-<p class="p11"><span class="s4"><b>0:00</b></span></p>
-<p class="p11"><span class="s4"><b>0:00</b></span></p>
-<p class="p12"><span class="s1">↺</span></p>
-<p class="p13"><span class="s1"><b>LOADING…</b></span></p>
-<p class="p14"><span class="s4"><b>TEMPO</b></span></p>
-<p class="p15"><span class="s1"><b>Slow</b></span></p>
-<p class="p9"><span class="s6"><b>60%</b></span></p>
-<p class="p15"><span class="s1"><b>Medium</b></span></p>
-<p class="p9"><span class="s6"><b>80%</b></span></p>
-<p class="p16"><span class="s1"><b>Full</b></span></p>
-<p class="p17"><span class="s7"><b>100%</b></span></p>
-<p class="p18"><span class="s4">Pitch stays the same at every tempo.</span></p>
-<p class="p19"><span class="s8"><b>Setup:</b> this player loads two recordings by URL. Replace the placeholders in the code:</span><span class="s9">"https://onlineguitarchoroclub.com/descendo-accomp.mp3",</span><span class="s8"> with your accompaniment recording and </span><span class="s9">"https://onlineguitarchoroclub.com/descendo-melody.mp3",</span><span class="s8"> with your melody recording. Host the MP3s on your site or any direct-link source.<span class="Apple-converted-space"> </span></span></p>
-<p class="p20"><span class="s10">Made for the <a href="https://onlineguitarchoroclub.com/"><span class="s2">Online Guitar Choro Club</span></a></span></p>
-<p class="p21"><span class="s1">One choro · One month · One global community<span class="Apple-converted-space"> </span></span></p>
+<div class="stripe"></div>
+<div class="wrap">
+
+<header>
+  <div class="logo">Online <span>Guitar</span> Choro Club</div>
+  <div class="eyebrow">✦ Play Along</div>
+  <h1>Descendo a Serra</h1>
+  <div class="tune-composer">Pixinguinha / Benedito Lacerda · Session 2</div>
+</header>
+
+<div class="tabs">
+  <button class="tab on" data-track="accomp">
+    Accompaniment
+    <span class="role">you play the melody</span>
+  </button>
+  <button class="tab" data-track="melody">
+    Melody
+    <span class="role">you play accompaniment</span>
+  </button>
+</div>
+
+<div class="panel">
+  <div class="you-play" id="youPlay">Douglas plays the <strong>accompaniment</strong> — you play the melody over it.</div>
+
+  <div class="time-row">
+    <span id="curTime">0:00</span>
+    <span id="totTime">0:00</span>
+  </div>
+  <input type="range" class="scrub" id="scrub" min="0" max="100" value="0" step="0.1">
+
+  <div class="controls">
+    <button class="restart" id="restartBtn" title="Restart">↺</button>
+    <button class="play-btn" id="playBtn" disabled>Loading…</button>
+  </div>
+
+  <div class="tempo-label">Tempo</div>
+  <div class="tempo-seg" id="tempoSeg">
+    <button data-rate="0.6">Slow<span class="pct">60%</span></button>
+    <button data-rate="0.8">Medium<span class="pct">80%</span></button>
+    <button data-rate="1.0" class="on">Full<span class="pct">100%</span></button>
+  </div>
+
+  <div class="status" id="status">Pitch stays the same at every tempo.</div>
+</div>
+
+<div class="setup" id="setupNote">
+  <strong>Setup:</strong> this player loads two recordings by URL. Replace the placeholders in the code:
+  <code>ACCOMP_URL</code> with your accompaniment recording and <code>MELODY_URL</code> with your melody recording. Host the MP3s on your site or any direct-link source.
+</div>
+
+<footer>
+  Made for the <a href="https://onlineguitarchoroclub.com">Online Guitar Choro Club</a><br>
+  One choro · One month · One global community
+</footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/soundtouchjs@0.1.30/dist/soundtouch.min.js"></script>
+<script>
+// ============ CONFIG — replace these two URLs with your hosted recordings ============
+const TRACKS = {
+  accomp: "https://onlineguitarchoroclub.com/descendo-accomp.mp3",   // Douglas plays accompaniment
+  melody: "https://onlineguitarchoroclub.com/descendo-melody.mp3",   // Douglas plays melody
+};
+// =====================================================================================
+
+const playBtn   = document.getElementById('playBtn');
+const restartBtn= document.getElementById('restartBtn');
+const scrub     = document.getElementById('scrub');
+const curTimeEl = document.getElementById('curTime');
+const totTimeEl = document.getElementById('totTime');
+const statusEl  = document.getElementById('status');
+const youPlay   = document.getElementById('youPlay');
+const setupNote = document.getElementById('setupNote');
+
+let audioCtx = null;
+let currentTrack = 'accomp';
+let rate = 1.0;
+let isPlaying = false;
+let buffers = {};            // decoded AudioBuffer per track
+let soundtouchNode = null;
+let sourcePos = 0;           // playback position in source samples
+let startCtxTime = 0;
+let rafId = null;
+let duration = 0;
+
+function fmt(s){
+  if(!isFinite(s)) return '0:00';
+  const m=Math.floor(s/60), sec=Math.floor(s%60);
+  return m+':'+String(sec).padStart(2,'0');
+}
+
+async function ensureCtx(){
+  if(!audioCtx) audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==='suspended') await audioCtx.resume();
+}
+
+async function loadTrack(key){
+  const url = TRACKS[key];
+  if(!url || url==='ACCOMP_URL' || url==='MELODY_URL'){
+    statusEl.textContent = 'No recording loaded yet for this part. Add the URL in the code.';
+    playBtn.textContent = 'No audio';
+    playBtn.disabled = true;
+    duration = 0;
+    return;
+  }
+  setupNote.style.display='none';
+  statusEl.textContent = 'Loading recording…';
+  playBtn.disabled = true; playBtn.textContent='Loading…';
+  try{
+    await ensureCtx();
+    if(!buffers[key]){
+      const resp = await fetch(url);
+      const arr  = await resp.arrayBuffer();
+      buffers[key] = await audioCtx.decodeAudioData(arr);
+    }
+    duration = buffers[key].duration;
+    totTimeEl.textContent = fmt(duration);
+    statusEl.textContent = 'Ready. Pitch stays the same at every tempo.';
+    playBtn.disabled=false; playBtn.textContent='Play';
+  }catch(e){
+    statusEl.textContent = 'Could not load the recording. Check the URL and that it allows playback.';
+    playBtn.textContent='Error'; playBtn.disabled=true;
+  }
+}
+
+// SoundTouch-based time-stretch playback
+let stProcessor = null;
+function stop(keepPos){
+  if(stProcessor){ try{stProcessor.disconnect();}catch(e){} stProcessor=null; }
+  if(rafId) cancelAnimationFrame(rafId);
+  isPlaying=false;
+  playBtn.textContent='Play';
+  playBtn.classList.remove('playing');
+  if(!keepPos){ sourcePos=0; updateScrub(0); }
+}
+
+function play(){
+  const buf = buffers[currentTrack];
+  if(!buf) return;
+
+  const st = new SoundTouch.SoundTouch(buf.sampleRate);
+  st.tempo = 1/rate;            // SoundTouch tempo: <1 = slower
+  // We feed source samples and pull stretched output
+  const channels = buf.numberOfChannels;
+  const left = buf.getChannelData(0);
+  const right = channels>1 ? buf.getChannelData(1) : left;
+
+  let pos = Math.floor(sourcePos);
+  const source = {
+    extract: function(target, numFrames, position){
+      const remaining = buf.length - pos;
+      const frames = Math.min(numFrames, remaining);
+      for(let i=0;i<frames;i++){
+        target[i*2]   = left[pos+i];
+        target[i*2+1] = right[pos+i];
+      }
+      pos += frames;
+      sourcePos = pos;
+      return frames;
+    }
+  };
+  const filter = new SoundTouch.SimpleFilter(source, st);
+
+  const bufferSize = 4096;
+  stProcessor = audioCtx.createScriptProcessor(bufferSize, 2, 2);
+  const samples = new Float32Array(bufferSize*2);
+
+  stProcessor.onaudioprocess = function(e){
+    const l = e.outputBuffer.getChannelData(0);
+    const r = e.outputBuffer.getChannelData(1);
+    const framesExtracted = filter.extract(samples, bufferSize);
+    if(framesExtracted===0){
+      stop(false);
+      return;
+    }
+    for(let i=0;i<bufferSize;i++){
+      l[i] = i<framesExtracted ? samples[i*2]   : 0;
+      r[i] = i<framesExtracted ? samples[i*2+1] : 0;
+    }
+  };
+  stProcessor.connect(audioCtx.destination);
+
+  isPlaying=true;
+  playBtn.textContent='Pause';
+  playBtn.classList.add('playing');
+  trackProgress();
+}
+
+function trackProgress(){
+  const buf = buffers[currentTrack];
+  if(!buf){return;}
+  const cur = sourcePos / buf.sampleRate;
+  curTimeEl.textContent = fmt(cur);
+  scrub.value = duration? (cur/duration*100):0;
+  if(isPlaying) rafId = requestAnimationFrame(trackProgress);
+}
+
+function updateScrub(pct){
+  scrub.value = pct;
+  const buf = buffers[currentTrack];
+  if(buf){ curTimeEl.textContent = fmt(sourcePos/buf.sampleRate); }
+}
+
+playBtn.addEventListener('click', async ()=>{
+  await ensureCtx();
+  if(!buffers[currentTrack]) return;
+  if(isPlaying){ stop(true); }
+  else { play(); }
+});
+
+restartBtn.addEventListener('click', ()=>{
+  stop(true);
+  sourcePos=0;
+  updateScrub(0);
+  curTimeEl.textContent='0:00';
+});
+
+scrub.addEventListener('input', ()=>{
+  const buf = buffers[currentTrack];
+  if(!buf) return;
+  const wasPlaying = isPlaying;
+  if(isPlaying) stop(true);
+  sourcePos = Math.floor(buf.length * (scrub.value/100));
+  curTimeEl.textContent = fmt(sourcePos/buf.sampleRate);
+  if(wasPlaying) play();
+});
+
+// Tabs
+document.querySelectorAll('.tab').forEach(t=>{
+  t.addEventListener('click', async ()=>{
+    if(t.dataset.track===currentTrack) return;
+    stop(false);
+    document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+    t.classList.add('on');
+    currentTrack = t.dataset.track;
+    if(currentTrack==='accomp'){
+      youPlay.innerHTML='Douglas plays the <strong>accompaniment</strong> — you play the melody over it.';
+    }else{
+      youPlay.innerHTML='Douglas plays the <strong>melody</strong> — you play the accompaniment underneath.';
+    }
+    curTimeEl.textContent='0:00'; scrub.value=0;
+    await loadTrack(currentTrack);
+  });
+});
+
+// Tempo
+document.getElementById('tempoSeg').addEventListener('click', e=>{
+  const btn = e.target.closest('button');
+  if(!btn) return;
+  document.querySelectorAll('#tempoSeg button').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  rate = parseFloat(btn.dataset.rate);
+  // restart playback at new tempo if currently playing
+  if(isPlaying){ stop(true); play(); }
+});
+
+// initial load
+loadTrack('accomp');
+</script>
 </body>
 </html>
